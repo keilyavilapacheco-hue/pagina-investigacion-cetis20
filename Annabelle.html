@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>muñeca annabelle</title>
+    <!-- Fuentes malditas desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Special+Elite&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Fondo rojo sangre y atmósfera oscura */
+        body {
+            background-color: #120000;
+            background-image: radial-gradient(circle at center, #3d0000 0%, #080000 100%);
+            color: #ffffff;
+            font-family: 'Special Elite', monospace;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Contenedor tipo pergamino maldito */
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 30px;
+            box-shadow: 0 0 60px rgba(255, 0, 0, 0.4);
+            background: rgba(0, 0, 0, 0.9);
+            border: 3px solid #4a0000;
+            border-radius: 15px;
+        }
+
+        /* Título con chorreo de sangre y brillo demoníaco */
+        h1 {
+            font-family: 'Nosifer', sans-serif;
+            color: #ff0000;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            text-shadow: 0 0 20px #ff0000, 0 0 40px #990000;
+            animation: brilloDemonio 4s infinite alternate;
+        }
+
+        /* Subtítulos de las secciones con fuentes espeluznantes */
+        h2 {
+            font-family: 'Creepster', cursive;
+            color: #ff3333;
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+            border-bottom: 2px dashed #4a0000;
+            padding-bottom: 10px;
+        }
+
+        /* Párrafos de información extendida */
+        p {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: #dcdcdc;
+            text-align: justify;
+            text-indent: 30px;
+            margin-bottom: 25px;
+        }
+
+        /* Bloques de advertencias escalofriantes */
+        .advertencia {
+            background-color: #ff0000;
+            color: #000000;
+            font-weight: bold;
+            font-family: 'Creepster', cursive;
+            font-size: 1.6rem;
+            padding: 20px;
+            margin: 40px 0;
+            border: 4px double #000000;
+            text-transform: uppercase;
+            box-shadow: 0 0 30px #ff0000;
+            animation: parpadeoErratico 0.7s infinite;
+        }
+
+        /* Variación de ritmo en el parpadeo para otras advertencias */
+        .advertencia-lenta {
+            animation: parpadeoErratico 1.5s infinite;
+        }
+
+        /* Sección de la gran estadística del 80% */
+        .estadistica-box {
+            font-size: 1.4rem;
+            color: #ffcccc;
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            border: 3px dashed #ff0000;
+            background: rgba(139, 0, 0, 0.15);
+            box-shadow: inset 0 0 20px rgba(255,0,0,0.2);
+        }
+
+        .estadistica-numero {
+            font-family: 'Nosifer', sans-serif;
+            font-size: 3.5rem;
+            color: #ff0000;
+            display: block;
+            margin-bottom: 10px;
+            text-shadow: 0 0 15px #ff0000;
+        }
+
+        /* Contenedor de la Imagen */
+        .imagen-container {
+            margin: 40px 0;
+        }
+
+        .imagen-container img {
+            max-width: 90%;
+            height: auto;
+            border: 5px solid #ff0000;
+            box-shadow: 0 0 40px #ff0000;
+            filter: grayscale(20%) contrast(110%);
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* La imagen reacciona de forma tétrica al pasar el cursor */
+        .imagen-container img:hover {
+            filter: grayscale(0%) contrast(130%) sepia(20%);
+            box-shadow: 0 0 60px #ff3333;
+            transform: scale(1.02);
+        }
+
+        /* Destacados dentro del texto */
+        .resaltado {
+            color: #ff5555;
+            font-weight: bold;
+        }
+
+        /* ANIMACIONES EN CSS */
+
+        /* Brillo demoníaco que pulsa en el fondo del texto */
+        @keyframes brilloDemonio {
+            0% {
+                text-shadow: 0 0 15px #ff0000, 0 0 20px #550000;
+            }
+            50% {
+                text-shadow: 0 0 35px #ff3333, 0 0 50px #bb0000;
+            }
+            100% {
+                text-shadow: 0 0 20px #ff0000, 0 0 30px #880000;
+            }
+        }
+
+        /* Parpadeo errático simulando una luz maldita fallando */
+        @keyframes parpadeoErratico {
+            0%, 18%, 22%, 25%, 53%, 57%, 100% {
+                opacity: 1;
+            }
+            20%, 24%, 55% {
+                opacity: 0.2;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Título principal -->
+        <h1>muñeca annabelle</h1>
+
+        <!-- Primera advertencia -->
+        <div class="advertencia">
+            ⚠ ALERTA MÁXIMA: ESTÁS ENTRANDO EN TERRITORIO MALDITO. NO LEAS EN VOZ ALTA. ⚠
+        </div>
+
+        <!-- Imagen del caso real -->
+        <div class="imagen-container">
+            <img src="https://static.wikia.nocookie.net/raggedyann/images/9/97/Annabelle_Doll.jpg" alt="La verdadera Muñeca Annabelle en el museo Warren">
+        </div>
+
+        <!-- Bloque de estadística solicitado -->
+        <div class="estadistica-box">
+            <span class="estadistica-numero">80%</span>
+            Estudios de la cultura popular y registros de los investigadores del ocultismo estiman que el <strong>80% de las personas en todo el mundo</strong> reconocen instantáneamente el nombre de Annabelle. Su oscura fama supera a la de cualquier otro objeto poseído en la historia moderna, convirtiéndola en un fenómeno global del terror absoluto.
+        </div>
+
+        <!-- SECCIÓN 1: ¿Qué es? -->
+        <h2>¿Qué es realmente Annabelle?</h2>
+        <p>
+            A diferencia de la escalofriante figura de porcelana tallada con facciones grotescas que Hollywood popularizó en sus películas, la <span class="resaltado">verdadera Annabelle</span> es, en apariencia, un objeto inofensivo. Se trata de una muñeca de trapo clásica de la línea estadounidense <em>Raggedy Ann</em>, fabricada con hilos rojos de estambre, ojos de botones negros redondos y una sonrisa pintada sobre una cara de tela blanca. Esta apariencia dulce e infantil es, según expertos, su trampa más peligrosa.
+        </p>
+        <p>
+            Desde el punto de vista de la demonología profesional, Annabelle no está "poseída" en el sentido estricto de la palabra. Los demonólogos explican que los espíritus humanos pueden poseer cuerpos, pero los objetos inertes son manipulados por entidades distintas. Annabelle funciona como un <span class="resaltado">foco físico o un conducto místico</span>. Dentro de ella habita una presencia no humana, catalogada como un espíritu inhumano o demonio, que se aferró al juguete con un único objetivo: debilitar psicológicamente a quienes la rodeaban para, eventualmente, poseer un alma de carne y hueso.
+        </p>
+
+        <!-- Segunda advertencia -->
+        <div class="advertencia advertencia-lenta">
+            ⚠ RECORDATORIO: LAS ENTIDADES DEMONÍACAS NO SE ALIMENTAN DEL JUGUETE, SE ALIMENTAN DE TU MIEDO. ⚠
+        </div>
+
+        <!-- SECCIÓN 2: ¿Dónde se encuentra? -->
+        <h2>¿Dónde se encuentra en la actualidad?</h2>
+        <p>
+            Durante décadas, el hogar de esta entidad ha sido el célebre <span class="resaltado">Museo del Ocultismo de Ed y Lorraine Warren</span>, situado en la localidad de Monroe, en el estado de Connecticut, Estados Unidos. Tras los violentos incidentes que desató en los años setenta, la muñeca fue neutralizada mediante rituales específicos y confinada en una vitrina construida especialmente para ella.
+        </p>
+        <p>
+            La vitrina está fabricada con madera pesada y paneles de cristal grueso, sellada herméticamente y bendecida con oraciones vinculantes. En el exterior del cristal destaca un letrero tallado en letras rojas que reza: <em>"WARNING: Positively Do Not Open"</em> (ADVERTENCIA: Rotundamente prohibido abrir). Aunque el museo cerró sus puertas físicas al público general hace unos años debido a regulaciones de zonificación, la muñeca permanece en el mismo sitio bajo la custodia y el cuidado de los herederos espirituales de los Warren, quienes continúan realizando oraciones de contención para asegurar que la fuerza que reside dentro del juguete no escape de su prisión de madera.
+        </p>
+
+        <!-- SECCIÓN 3: ¿Quiénes la obtuvieron? -->
+        <h2>¿Quiénes la obtuvieron y cómo comenzó la pesadilla?</h2>
+        <p>
+            La historia documentada comenzó en el año <span class="resaltado">1970</span>, cuando una madre amorosa compró la muñeca de trapo de segunda mano en una tienda de antigüedades para regalársela a su hija, <span class="resaltado">Donna</span>, quien en ese entonces estudiaba la carrera de enfermería. Donna se llevó el regalo a su apartamento, el cual compartía con otra estudiante llamada Angie. Al principio, la muñeca era un adorno nostálgico sobre la cama, pero al cabo de unas semanas, fenómenos inexplicables comenzaron a quebrar la paz del hogar.
+        </p>
+        <p>
+            Donna y Angie empezaron a notar que la muñeca cambiaba sutilmente de postura. Días después, comenzó a cambiar de habitación por completo: la dejaban sobre la cama y la encontraban sentada en el suelo de la sala con los brazos cruzados. La situación escaló de forma terrorífica cuando empezaron a aparecer notas escritas en papel de pergamino flotante (un material que ni siquiera tenían en la casa) con mensajes que decían <em>"Ayúdanos"</em> o <em>"Ayuda a Lou"</em>. Lou era un amigo cercano de las estudiantes que odiaba a la muñeca y que, poco después, sufrió un ataque físico directo: se despertó paralizado a mitad de la noche sintiendo que lo asfixiaban y descubrió arañazos profundos y quemaduras en su pecho que sangraban misteriosamente sin explicación médica.
+        </p>
+        <p>
+            Aterrorizadas, las jóvenes buscaron la guía de un médium, quien erróneamente les dijo que el juguete albergaba el espíritu de una niña de siete años llamada <span class="resaltado">Annabelle Higgins</span>, que había fallecido en el lugar años atrás. Las estudiantes, movidas por la compasión, le dieron permiso al espíritu de habitar la muñeca, abriendo voluntariamente la puerta al engaño. Al notar que la actividad empeoraba y se volvía violenta, contactaron a las autoridades de la iglesia, quienes enviaron de inmediato a los renombrados investigadores paranormales <span class="resaltado">Ed y Lorraine Warren</span>. Los Warren determinaron al instante que no se trataba de una niña, sino de un engaño demoníaco en su fase de infestación. Tras realizar un exorcismo en el apartamento, los Warren tomaron la custodia definitiva de la muñeca para proteger a las jóvenes, transportándola en su auto en un viaje caótico donde los frenos fallaron repetidamente, demostrando el poder del objeto antes de ser encerrado para siempre.
+        </p>
+
+        <!-- Advertencia final -->
+        <div class="advertencia">
+            ⚠ HAS TERMINADO DE LEER. AHORA CIERRA LA PÁGINA ANTES DE QUE SEA TARDE. ⚠
+        </div>
+
+    </div>
+
+</body>
+</html>
